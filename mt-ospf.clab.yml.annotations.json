@@ -1,0 +1,133 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "trafficRateAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "rt1",
+      "position": {
+        "x": 460,
+        "y": 220
+      }
+    },
+    {
+      "id": "rt2",
+      "position": {
+        "x": 220,
+        "y": 440
+      }
+    },
+    {
+      "id": "rt3",
+      "position": {
+        "x": 700,
+        "y": 440
+      }
+    },
+    {
+      "id": "sw1",
+      "position": {
+        "x": 460,
+        "y": 320
+      },
+      "icon": "switch",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "pc6",
+      "position": {
+        "x": 860,
+        "y": 780
+      },
+      "icon": "client"
+    },
+    {
+      "id": "pc5",
+      "position": {
+        "x": 720,
+        "y": 780
+      },
+      "icon": "client"
+    },
+    {
+      "id": "pc4",
+      "position": {
+        "x": 600,
+        "y": 780
+      },
+      "icon": "client"
+    },
+    {
+      "id": "pc3",
+      "position": {
+        "x": 320,
+        "y": 780
+      },
+      "icon": "client"
+    },
+    {
+      "id": "pc2",
+      "position": {
+        "x": 180,
+        "y": 780
+      },
+      "icon": "client"
+    },
+    {
+      "id": "pc1",
+      "position": {
+        "x": 40,
+        "y": 780
+      },
+      "icon": "client",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "rt9",
+      "position": {
+        "x": 860,
+        "y": 620
+      }
+    },
+    {
+      "id": "rt8",
+      "position": {
+        "x": 720,
+        "y": 620
+      }
+    },
+    {
+      "id": "rt7",
+      "position": {
+        "x": 600,
+        "y": 620
+      }
+    },
+    {
+      "id": "rt6",
+      "position": {
+        "x": 320,
+        "y": 620
+      }
+    },
+    {
+      "id": "rt5",
+      "position": {
+        "x": 180,
+        "y": 620
+      }
+    },
+    {
+      "id": "rt4",
+      "position": {
+        "x": 40,
+        "y": 620
+      }
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}

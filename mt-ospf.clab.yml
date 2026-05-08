@@ -1,0 +1,85 @@
+name: mtlab
+topology:
+  nodes:
+    rt1:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt1-config.rsc
+    rt2:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt2-config.rsc
+    rt3:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt3-config.rsc
+    rt4:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt4-config.rsc
+    rt5:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt5-config.rsc
+    rt6:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt6-config.rsc
+    rt7:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt7-config.rsc
+    rt8:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt8-config.rsc
+    rt9:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: rt9-config.rsc
+    sw1:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: sw1-config.rsc
+    pc1:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: pc1-config.rsc
+    pc2:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: pc2-config.rsc
+    pc3:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: pc3-config.rsc
+    pc4:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: pc4-config.rsc
+    pc5:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: pc5-config.rsc
+    pc6:
+      kind: mikrotik_ros
+      image: docker.io/iparchitechs/chr:stable
+      startup-config: pc6-config.rsc
+
+  links:
+    - endpoints: [ "sw1:eth1", "rt1:eth1" ]
+    - endpoints: [ "sw1:eth2", "rt2:eth1" ]
+    - endpoints: [ "sw1:eth3", "rt3:eth1" ]
+    - endpoints: [ "rt2:eth2", "rt3:eth2" ]
+    - endpoints: [ "rt2:eth3", "rt4:eth1" ]
+    - endpoints: [ "rt2:eth4", "rt5:eth1" ]
+    - endpoints: [ "rt2:eth5", "rt6:eth1" ]
+    - endpoints: [ "rt3:eth3", "rt7:eth1" ]
+    - endpoints: [ "rt3:eth4", "rt8:eth1" ]
+    - endpoints: [ "rt3:eth5", "rt9:eth1" ]
+    - endpoints: [ "rt4:eth2", "pc1:eth1" ]
+    - endpoints: [ "rt5:eth2", "pc2:eth1" ]
+    - endpoints: [ "rt6:eth2", "pc3:eth1" ]
+    - endpoints: [ "rt7:eth2", "pc4:eth1" ]
+    - endpoints: [ "rt8:eth2", "pc5:eth1" ]
+    - endpoints: [ "rt9:eth2", "pc6:eth1" ]
